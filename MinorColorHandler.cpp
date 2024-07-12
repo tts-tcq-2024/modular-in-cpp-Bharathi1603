@@ -16,7 +16,7 @@ const std::map<MinorColorHandler::Name, std::string> MinorColorHandler::minorCol
     {MinorColorHandler::Name::SLATE, "SLATE"},
 };
 
-int MinorColorHandler::getNumberOfColors() const
+int MinorColorHandler::getNumberOfColors()
 {
     return minorColorNames.size();
 }
