@@ -1,5 +1,4 @@
 #pragma once
-
 #include <iostream>
 #include <map>
 #include <string>
@@ -13,13 +12,10 @@ public:
       YELLOW = 0x03,
       VIOLET = 0x04,
     };
-
 private:
   static const std::map<Name, std::uint8_t> majorColorCodes;
   static const std::map<Name, std::string> majorColorNames;
-
 public:
-
 static const std::string getMajorColorName(const Name colorName) {
   auto iterator = majorColorNames.find(colorName);
   if (iterator != majorColorNames.end()) {
@@ -35,7 +31,6 @@ static const std::uint8_t getMajorColorCode(const Name colorName) {
   }
   return 0;
 }
-
 };
 
 const std::map<MajorColorHandler::Name, std::uint8_t> MajorColorHandler::majorColorCodes = {
@@ -45,7 +40,6 @@ const std::map<MajorColorHandler::Name, std::uint8_t> MajorColorHandler::majorCo
         {MajorColorHandler::Name::YELLOW, 0x03},
         {MajorColorHandler::Name::VIOLET, 0x04},
 };
-
 
 const std::map<MajorColorHandler::Name, std::string> MajorColorHandler::majorColorNames = {
         {MajorColorHandler::Name::WHITE, "WHITE"},
