@@ -21,7 +21,7 @@ int MinorColorHandler::getNumberOfColors() const
     return minorColorNames.size();
 }
 
-std::string MinorColorHandler::getColorName(const Name colorName) const
+std::string MinorColorHandler::getColorName(const Name colorName)
 {
   auto iterator = minorColorNames.find(colorName);
   if (iterator != minorColorNames.end()) 
@@ -31,7 +31,7 @@ std::string MinorColorHandler::getColorName(const Name colorName) const
   return "";
 }
 
-std::uint8_t MinorColorHandler::getColorCode(const Name colorName) const
+std::uint8_t MinorColorHandler::getColorCode(const Name colorName)
 {
   auto iterator = minorColorCodes.find(colorName);
   if (iterator != minorColorCodes.end()) 
