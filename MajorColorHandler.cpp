@@ -21,7 +21,7 @@ int MajorColorHandler::getNumberOfColors() const
     return majorColorNames.size();
 }
 
-std::string MajorColorHandler::geColorName(const Name colorName)
+std::string MajorColorHandler::getColorName(const Name colorName)
 {
   auto iterator = majorColorNames.find(colorName);
   if (iterator != majorColorNames.end()) 
