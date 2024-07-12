@@ -16,12 +16,12 @@ const std::map<MinorColorHandler::Name, std::string> MinorColorHandler::minorCol
     {MinorColorHandler::Name::SLATE, "SLATE"},
 };
 
-const int MinorColorHandler::getNumberOfColors()
+int MinorColorHandler::getNumberOfColors() const
 {
     return minorColorNames.size();
 }
 
-const std::string MinorColorHandler::getColorName(const Name colorName) 
+std::string MinorColorHandler::getColorName(const Name colorName) const
 {
   auto iterator = minorColorNames.find(colorName);
   if (iterator != minorColorNames.end()) 
@@ -31,7 +31,7 @@ const std::string MinorColorHandler::getColorName(const Name colorName)
   return "";
 }
 
-const std::uint8_t MinorColorHandler::getColorCode(const Name colorName) 
+std::uint8_t MinorColorHandler::getColorCode(const Name colorName) const
 {
   auto iterator = minorColorCodes.find(colorName);
   if (iterator != minorColorCodes.end()) 
