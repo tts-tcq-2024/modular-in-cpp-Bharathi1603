@@ -16,12 +16,12 @@ const std::map<MajorColorHandler::Name, std::string> MajorColorHandler::majorCol
         {MajorColorHandler::Name::VIOLET, "VIOLET"},
 };
 
-const int MajorColorHandler::getNumberOfColors()
+int MajorColorHandler::getNumberOfColors() const
 {
     return majorColorNames.size();
 }
 
-const std::string MajorColorHandler::geColorName(const Name colorName) 
+std::string MajorColorHandler::geColorName(const Name colorName) const
 {
   auto iterator = majorColorNames.find(colorName);
   if (iterator != majorColorNames.end()) 
@@ -31,7 +31,7 @@ const std::string MajorColorHandler::geColorName(const Name colorName)
   return "";
 }
 
-const std::uint8_t MajorColorHandler::getColorCode(const Name colorName) 
+std::uint8_t MajorColorHandler::getColorCode(const Name colorName) const
 {
   auto iterator = majorColorCodes.find(colorName);
   if (iterator != majorColorCodes.end()) 
