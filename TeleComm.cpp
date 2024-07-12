@@ -7,3 +7,8 @@ ColorPair TeleComm::getColorFromPairNumber(int pairNumber)
     MinorColorHandler::Name minorColor = static_cast<MinorColorHandler::Name>(zeroBasedPairNumber % MinorColorHandler::getNumberOfColors());
     return ColorPair(majorColor, minorColor);
 }
+
+int TeleComm::getPairNumberFromColor(MajorColorHandler::Name major, MinorColorHandler::Name minor)
+{
+    return major * numberOfMinorColors + minor + 1;
+}
