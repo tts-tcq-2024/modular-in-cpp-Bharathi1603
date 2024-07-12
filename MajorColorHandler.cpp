@@ -16,7 +16,7 @@ const std::map<MajorColorHandler::Name, std::string> MajorColorHandler::majorCol
         {MajorColorHandler::Name::VIOLET, "VIOLET"},
 };
 
-int MajorColorHandler::getNumberOfColors() const
+int MajorColorHandler::getNumberOfColors()
 {
     return majorColorNames.size();
 }
