@@ -1,7 +1,7 @@
 #pragma once
 #include "ColorPair.h"
 
-Class TeleComm
+class TeleComm
 {
   public:
     ColorPair getColorFromPairNumber(int pairNumber);      
