@@ -16,9 +16,9 @@ class MinorColorHandler
             SLATE = 0x04,
         };
     
-    static const int getNumberOfColors();
-    static const std::string getColorName(const Name colorName);    
-    static const std::uint8_t getColorCode(const Name colorName);
+    static int getNumberOfColors() const;
+    static std::string getColorName(const Name colorName) const;    
+    static std::uint8_t getColorCode(const Name colorName) const;
         
     private:
         static const std::map<Name, std::uint8_t> minorColorCodes;
