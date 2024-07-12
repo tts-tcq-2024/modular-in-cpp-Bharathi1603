@@ -4,5 +4,6 @@
 class TeleComm
 {
   public:
-    ColorPair getColorFromPairNumber(int pairNumber);      
+    ColorPair getColorFromPairNumber(int pairNumber);
+    int GetPairNumberFromColor(MajorColorHandler::Name major, MinorColorHandler::Name minor);
 };
