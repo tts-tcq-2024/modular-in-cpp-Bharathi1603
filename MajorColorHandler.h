@@ -16,9 +16,9 @@ class MajorColorHandler
           VIOLET = 0x04,
         };
     
-    static int getNumberOfColors() const;
-    static std::string geColorName(const Name colorName) const;
-    static std::uint8_t geColorCode(const Name colorName const);
+    int getNumberOfColors() const;
+    std::string geColorName(const Name colorName) const;
+    std::uint8_t geColorCode(const Name colorName const);
     
     private:
       static const std::map<Name, std::uint8_t> majorColorCodes;
