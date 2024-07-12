@@ -1,5 +1,4 @@
 #pragma once
-
 #include <iostream>
 #include <map>
 #include <string>
@@ -13,11 +12,9 @@ public:
         BROWN = 0x03,
         SLATE = 0x04,
     };
-
 private:
     static const std::map<Name, std::uint8_t> minorColorCodes;
     static const std::map<Name, std::string> minorColorNames;
-
 public:
     static const std::string getMinorColorName(const Name colorName) {
         auto iterator = minorColorNames.find(colorName);
