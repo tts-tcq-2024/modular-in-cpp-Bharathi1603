@@ -17,8 +17,8 @@ class MajorColorHandler
         };
     
     int getNumberOfColors() const;
-    std::string geColorName(const Name colorName);
-    std::uint8_t geColorCode(const Name colorName);
+    std::string getColorName(const Name colorName);
+    std::uint8_t getColorCode(const Name colorName);
     
     private:
       static const std::map<Name, std::uint8_t> majorColorCodes;
