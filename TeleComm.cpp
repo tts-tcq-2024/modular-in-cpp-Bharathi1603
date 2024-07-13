@@ -12,3 +12,13 @@ int TeleComm::getPairNumberFromColor(MajorColorHandler::Name major, MinorColorHa
 {
     return MajorColorHandler::getColorCode(major) * MinorColorHandler::getNumberOfColors() + MinorColorHandler::getColorCode(minor) + 1;
 }
+
+std::map<std::uint8_t, ColorPair> TeleComm::getColorPairList()
+{
+  std::map<std::uint8_t, ColorPair> colorPairList;
+  for(std::size_t pairNo = 1; pairNo <=  maxColorPair; pairNo++)
+   {
+      colorPairList.inset(pairNo, getColorFromPairNumber(pairNo);
+   }
+   return colorPairList;
+}
