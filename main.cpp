@@ -24,5 +24,10 @@ int main() {
     testPairToNumber(MajorColorHandler::Name::BLACK,  MinorColorHandler::Name::ORANGE, 12);
     testPairToNumber(MajorColorHandler::Name::VIOLET,  MinorColorHandler::Name::SLATE, 25);
 
+    for(const auto& colorPairInfo : TeleComm::getColorPairList())
+    {
+        std::cout<< "Pair number " << colorPairInfo.first << " Color Pair "  << colorPairInfo.second.toString() < std::endl;
+    }
+
     return 0;
 }
