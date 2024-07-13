@@ -9,11 +9,11 @@ const std::map<MinorColorHandler::Name, std::uint8_t> MinorColorHandler::minorCo
 };
 
 const std::map<MinorColorHandler::Name, std::string> MinorColorHandler::minorColorNames = {
-    {MinorColorHandler::Name::BLUE, "BLUE"},
-    {MinorColorHandler::Name::ORANGE, "ORANGE"},
-    {MinorColorHandler::Name::GREEN, "GREEN"},
-    {MinorColorHandler::Name::BROWN, "BROWN"},
-    {MinorColorHandler::Name::SLATE, "SLATE"},
+    {MinorColorHandler::Name::BLUE, "Blue"},
+    {MinorColorHandler::Name::ORANGE, "Orange"},
+    {MinorColorHandler::Name::GREEN, "Green"},
+    {MinorColorHandler::Name::BROWN, "Brown"},
+    {MinorColorHandler::Name::SLATE, "Slate"},
 };
 
 int MinorColorHandler::getNumberOfColors()
