@@ -10,5 +10,5 @@ ColorPair TeleComm::getColorFromPairNumber(int pairNumber)
 
 int TeleComm::getPairNumberFromColor(MajorColorHandler::Name major, MinorColorHandler::Name minor)
 {
-    return major * MinorColorHandler::getNumberOfColors() + minor + 1;
+    return MajorColorHandler::getColorCode(major) * MinorColorHandler::getNumberOfColors() + MinorColorHandler::getColorCode(minor) + 1;
 }
