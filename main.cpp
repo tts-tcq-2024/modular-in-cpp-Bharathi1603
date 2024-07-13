@@ -2,27 +2,29 @@
 #include <assert.h>
 #include "TeleComm.h"
 
-void testNumberToPair(int pairNumber, MajorColorHandle::Name expectedMajor, MinorColorHandle::Name expectedMinor)
+void testNumberToPair(int pairNumber, MajorColorHandler::Name expectedMajor, MinorColorHandler::Name expectedMinor)
 {
-    ColorPair colorPair = TeleComm::gtColorFromPairNumber(pairNumber);
-    std::cout << "Got pair " << colorPair.ToString() << std::endl;
-    assert(colorPair.getMajor() == expectedMajor);
-    assert(colorPair.getMinor() == expectedMinor);
+    ColorPair colorPair;
+    colorPair= colorPair.gtColorFromPairNumber(pairNumber);
+    std::cout << "Got pair " << colorPair.toString() << std::endl;
+    assert(colorPair.getMajorColor() == expectedMajor);
+    assert(colorPair.getMinorColor() == expectedMinor);
 }
 
-void testPairToNumber(MajorColorHandle::Name major, MinorColorHandle::Name minor, int expectedPairNumber)
+void testPairToNumber(MajorColorHandler::Name major, MinorColorHandler::Name minor, int expectedPairNumber)
 {
-    int pairNumber = TeleComm::getPairNumberFromColor(major, minor);
+    ColorPair colorPair;
+    int pairNumber = colorPair.getPairNumberFromColor(major, minor);
     std::cout << "Got pair number " << pairNumber << std::endl;
     assert(pairNumber == expectedPairNumber);
 }
 
 int main() {
-    testNumberToPair(4, MajorColorHandler::Name::WHITE,  MinorColorHandle::Name::BROWN);
-    testNumberToPair(5, MajorColorHandler::Name::WHITE,  MinorColorHandle::Name::SLATE);
+    testNumberToPair(4, MajorColorHandler::Name::WHITE,  MinorColorHandler::Name::BROWN);
+    testNumberToPair(5, MajorColorHandler::Name::WHITE,  MinorColorHandler::Name::SLATE);
 
-    // testPairToNumber(MajorColorHandler::Name::BLACK,  MinorColorHandle::Name::ORANGE, 12);
-    // testPairToNumber(MajorColorHandler::Name::VIOLET,  MinorColorHandle::Name::SLATE, 25);
+    // testPairToNumber(MajorColorHandler::Name::BLACK,  MinorColorHandler::Name::ORANGE, 12);
+    // testPairToNumber(MajorColorHandler::Name::VIOLET,  MinorColorHandler::Name::SLATE, 25);
 
     return 0;
 }
