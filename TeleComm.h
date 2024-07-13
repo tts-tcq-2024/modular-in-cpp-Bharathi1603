@@ -9,5 +9,5 @@ class TeleComm
   public:
     static ColorPair getColorFromPairNumber(int pairNumber);
     static int getPairNumberFromColor(MajorColorHandler::Name major, MinorColorHandler::Name minor);
-    static std::vector<ColorPair> getColorPairList(int pairNumber);
+    static std::map<std::uint8_t, ColorPair> getColorPairList();
 };
