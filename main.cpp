@@ -14,7 +14,7 @@ void testNumberToPair(int pairNumber, MajorColorHandler::Name expectedMajor, Min
 void testPairToNumber(MajorColorHandler::Name major, MinorColorHandler::Name minor, int expectedPairNumber)
 {
     TeleComm teleComm;
-    int pairNumber = teleComm::getPairNumberFromColor(major, minor);
+    int pairNumber = teleComm.getPairNumberFromColor(major, minor);
     std::cout << "Got pair number " << pairNumber << std::endl;
     assert(pairNumber == expectedPairNumber);
 }
