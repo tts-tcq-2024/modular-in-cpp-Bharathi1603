@@ -4,8 +4,7 @@
 
 void testNumberToPair(int pairNumber, MajorColorHandler::Name expectedMajor, MinorColorHandler::Name expectedMinor)
 {
-    TeleComm teleComm;
-    ColorPair colorPair = teleComm.getColorFromPairNumber(pairNumber);
+    ColorPair colorPair = TeleComm::getColorFromPairNumber(pairNumber);
     std::cout << "Got pair " << colorPair.toString() << std::endl;
     assert(colorPair.getMajorColor() == expectedMajor);
     assert(colorPair.getMinorColor() == expectedMinor);
@@ -13,8 +12,7 @@ void testNumberToPair(int pairNumber, MajorColorHandler::Name expectedMajor, Min
 
 void testPairToNumber(MajorColorHandler::Name major, MinorColorHandler::Name minor, int expectedPairNumber)
 {
-    TeleComm teleComm;
-    int pairNumber = teleComm.getPairNumberFromColor(major, minor);
+    int pairNumber = TeleComm::getPairNumberFromColor(major, minor);
     std::cout << "Got pair number " << pairNumber << std::endl;
     assert(pairNumber == expectedPairNumber);
 }
