@@ -26,7 +26,7 @@ int main() {
 
     for(const auto& colorPairInfo : TeleComm::getColorPairList())
     {
-        std::cout<< "Pair number " << colorPairInfo.first << " Color Pair "  << colorPairInfo.second.toString() < std::endl;
+        std::cout<< "Pair number " << colorPairInfo.first << " Color Pair "  << colorPairInfo.second.toString() << std::endl;
     }
 
     return 0;
