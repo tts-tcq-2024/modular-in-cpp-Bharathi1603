@@ -5,7 +5,7 @@
 class TeleComm
 {
   private:
-    static const maxColorPair = 25;
+    static const std::uint8_t maxColorPair = 25;
   public:
     static ColorPair getColorFromPairNumber(int pairNumber);
     static int getPairNumberFromColor(MajorColorHandler::Name major, MinorColorHandler::Name minor);
