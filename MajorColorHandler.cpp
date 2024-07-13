@@ -9,11 +9,11 @@ const std::map<MajorColorHandler::Name, std::uint8_t> MajorColorHandler::majorCo
 };
 
 const std::map<MajorColorHandler::Name, std::string> MajorColorHandler::majorColorNames = {
-        {MajorColorHandler::Name::WHITE, "WHITE"},
-        {MajorColorHandler::Name::RED, "RED"},
-        {MajorColorHandler::Name::BLACK, "BLACK"},
-        {MajorColorHandler::Name::YELLOW, "YELLOW"},
-        {MajorColorHandler::Name::VIOLET, "VIOLET"},
+        {MajorColorHandler::Name::WHITE, "White"},
+        {MajorColorHandler::Name::RED, "Red"},
+        {MajorColorHandler::Name::BLACK, "Black"},
+        {MajorColorHandler::Name::YELLOW, "Yellow"},
+        {MajorColorHandler::Name::VIOLET, "Violet"},
 };
 
 int MajorColorHandler::getNumberOfColors()
