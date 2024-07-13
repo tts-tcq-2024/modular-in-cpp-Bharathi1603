@@ -18,7 +18,7 @@ std::map<std::uint8_t, ColorPair> TeleComm::getColorPairList()
   std::map<std::uint8_t, ColorPair> colorPairList;
   for(std::size_t pairNo = 1; pairNo <=  maxColorPair; pairNo++)
    {
-      colorPairList.insert(pairNo, getColorFromPairNumber(pairNo);
+      colorPairList.insert(pairNo, getColorFromPairNumber(pairNo));
    }
    return colorPairList;
 }
