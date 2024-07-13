@@ -23,8 +23,8 @@ int main() {
     testNumberToPair(4, MajorColorHandler::Name::WHITE,  MinorColorHandler::Name::BROWN);
     testNumberToPair(5, MajorColorHandler::Name::WHITE,  MinorColorHandler::Name::SLATE);
 
-    // testPairToNumber(MajorColorHandler::Name::BLACK,  MinorColorHandler::Name::ORANGE, 12);
-    // testPairToNumber(MajorColorHandler::Name::VIOLET,  MinorColorHandler::Name::SLATE, 25);
+    testPairToNumber(MajorColorHandler::Name::BLACK,  MinorColorHandler::Name::ORANGE, 12);
+    testPairToNumber(MajorColorHandler::Name::VIOLET,  MinorColorHandler::Name::SLATE, 25);
 
     return 0;
 }
